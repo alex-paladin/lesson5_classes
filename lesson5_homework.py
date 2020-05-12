@@ -1,4 +1,4 @@
-# comment line added in DEV branch
+# please advise how to active the commented rows
 
 class Gadget:
     def __init__(self, name, color):
@@ -31,6 +31,9 @@ class Tablet(Gadget):
     def __init__(self, name, color, display):
         super().__init__(name, color)
         self.display = display
+        #self.quality = ''
+        #if self.display > 10:
+        #    self.quality = 'large'
 
     def show_name(self):
         a = 'My name is '+self.name+' and I am a tablet PC!'
@@ -38,7 +41,7 @@ class Tablet(Gadget):
 
     def describe_yourself(self):
         print(f'I am {self.color} and I have {self.display} inch display')
-
+        #print(f'I am {self.color} and I have {self.display} {self.quality} inch display')
 
 object_list = [
             Smartphone('iPhone ','white',64),
